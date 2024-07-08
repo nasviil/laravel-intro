@@ -23,28 +23,30 @@
   <section class="h-full flex-grow flex flex-col py-4 pr-14 pl-72 mr-[24%]">
     <div class="text-[#4DA444] text-4xl font-bold mb-4">Hello Roel. <span class="opacity-50 font-normal ml-2">Welcome Back!</span></div>
     <div class="flex justify-between gap-6">
-      <button class="w-[33%] h-28 border border-[#3E8336] bg-[#3E8336] text-white rounded-lg flex items-center px-6">
-        <img src="{{ asset('img/Orders-active.png') }}" alt="orders" class="mr-4 fill-white">
-        <div class="text-left">
-          <p class="text-xl tracking-widest">ORDERS</p>
-          <p class="text-3xl font-bold">2</p>
-        </div>
-      </button>
+      <a href="{{ url('etanom/dashboard/orders') }}" class="w-[33%]">
+        <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
+          <img src="{{ asset('img/Orders-inactive.png') }}" alt="orders" class="mr-4 fill-white">
+          <div class="text-left">
+            <p class="text-xl font-poppins tracking-widest">ORDERS</p>
+            <p class="text-3xl font-bold font-poppins">2</p>
+          </div>
+        </button>
+      </a>
       <a href="{{ url('etanom/dashboard/planting') }}" class="w-[33%]">
         <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
-          <img src="{{ asset('img/Planting-inactive.png') }}" alt="orders" class="mr-4 fill-[#C8E3C5]">
+          <img src="{{ asset('img/Planting-inactive.png') }}" alt="orders" class="mr-4 fill-white">
           <div class="text-left">
-            <p class="text-xl tracking-widest">PLANTING</p>
-            <p class="text-3xl font-bold">2</p>
+            <p class="text-xl font-poppins tracking-widest">PLANTING</p>
+            <p class="text-3xl font-bold font-poppins">2</p>
           </div>
         </button>
       </a>
       <a href="{{ url('etanom/dashboard/planted') }}" class="w-[33%]">
-        <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
-          <img src="{{ asset('img/Planted-inactive.png') }}" alt="orders" class="mr-4 fill-[#C8E3C5]">
+        <button class="w-full h-28 border border-[#3E8336] bg-[#3E8336] text-white rounded-lg flex items-center px-6">
+          <img src="{{ asset('img/Planted-active.png') }}" alt="orders" class="mr-4 fill-white">
           <div class="text-left">
-            <p class="text-xl tracking-widest">PLANTED</p>
-            <p class="text-3xl font-bold">2</p>
+            <p class="text-xl font-poppins tracking-widest">PLANTED</p>
+            <p class="text-3xl font-bold font-poppins">2</p>
           </div>
         </button>
       </a>
@@ -55,14 +57,14 @@
     </div>
     <div class="bg-white rounded-b-md">
       <div class="px-14 border-t-8 border-[#4DA444] p-2 flex justify-between">
-        <div class="font-bold text-xl">78GH3FBNJ<span class="font-normal border-l border-neutral-200 px-2 ml-2">Roel S. Bayola</span></div>
-        <div class="text-[#4DA444] text-xl">TO ACCEPT</div>
+        <div class="font-bold text-xl">83JDLW029<span class="font-normal border-l border-neutral-200 px-2 ml-2">Roel S. Bayola</span></div>
+        <div class="text-[#4DA444] text-xl">COMPLETED <span class="font-bold border-l border-neutral-200 px-2">JUNE 32, 2029</span></div>
       </div>
       <div class="px-14 border-t border-neutral-300 flex justify-between py-4">
         <div class="flex">
-          <img src="{{ asset('img/Tree.png') }}" alt="" class="mr-2">
+          <img src="{{ asset('img/Rectangle_220.png') }}" alt="" class="mr-2">
           <div>
-            <p class="text-2xl font-bold tracking-wide">White Laawan</p>
+            <p class="text-2xl font-bold tracking-wide">Bear Brand</p>
             <p class="text-neutral-500 text-xl">
               <i class="fa-solid fa-location-dot text-orange-500"></i>
               Naawan, Misamis Oriental
@@ -76,10 +78,14 @@
       <div class="px-14 border-t border-neutral-300 flex justify-between py-6">
         <div>
           <button class="py-2 px-4 text-xl bg-[#234a1f] text-white mr-4">View more items</button> <span class="text-neutral-400 text-xl">7 items</span>
+          <p class="text-neutral-400 text-lg mt-6">Upload completed. You can upload another to make changes.</p>
         </div>
         <div class="flex flex-col items-end">
-          <p class="text-xl">Order Total: <span class="ml-4 font-bold text-2xl text-[#4DA444]">P1,632</span></p>
-          <button class="bg-[#33B249] text-xl text-white px-8 py-3 mt-6 rounded-md hover:bg-[#33b248da]">ACCEPT</button>
+          <div>
+            <p class="text-xl">Order Total: <span class="ml-4 text-2xl font-bold text-[#4DA444]">P1,632</span></p>
+          </div>
+          <div class="bg-[#33b24883] text-xl text-white px-8 py-3 mt-6 rounded-md flex items-center">PAYMENT RECEIVED
+          </div>
         </div>
       </div>
     </div>
