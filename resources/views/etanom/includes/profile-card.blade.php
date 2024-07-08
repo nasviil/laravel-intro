@@ -69,7 +69,27 @@
         </div>
       </div>
     </div>
-    <div>
-      <h1>My Earnings</h1>
+    <div class="p-8">
+      <h1 class="text-2xl text-[#234A1F] font-bold mb-8">My Earnings</h1>
+      <div class="flex justify-between mb-4">
+        <div class="flex">
+          <img src="{{ asset('img/earnings-profile-card.png') }}" alt="" class="w-7 h-6 mr-4">
+          <h2 class="text-xl">Earnings</h2>
+        </div>
+        <h2 class="text-xl">P17,293</h2>
+      </div>
+      <div class="flex justify-between">
+        <div class="flex">
+          <img src="{{ asset('img/balance-profile-card.png') }}" alt="" class="w-7 h-6 mr-4">
+          <h2 class="text-xl">Balance</h2>
+        </div>
+        <h2 class="text-xl text-[#4DA444] font-bold">P17,293</h2>
+      </div>
+      <div class="flex justify-between w-full py-6 gap-6">
+        <button class="w-[50%] text-xl text-white bg-[#234A1F] px-2 py-3 rounded-md flex gap-4 items-center justify-center">
+          <img src="{{ asset('img/Transactions.png') }}" alt="" class="w-6">Transactions</button>
+        <button class="w-[50%] text-xl text-white bg-[#234A1F] px-4 py-4 rounded-md flex gap-4 items-center justify-center">
+          <img src="{{ asset('img/withdraw.png') }}" alt="" class="w-8">Withdraw</button>
+      </div>
     </div>
   </section>
