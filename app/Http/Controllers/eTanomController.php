@@ -52,18 +52,18 @@ class eTanomController extends Controller
   {
     $app_name = 'eTanom';
 
-    return view('etanom.dashboard-orders', compact('app_name'));
+    return view('etanom.pages.db-orders', compact('app_name'));
   }
   public function dashboard_planting()
   {
     $app_name = 'eTanom';
 
-    return view('etanom.dashboard-planting', compact('app_name'));
+    return view('etanom.pages.db-planting', compact('app_name'));
   }
   public function dashboard_planted()
   {
     $app_name = 'eTanom';
 
-    return view('etanom.dashboard-planted', compact('app_name'));
+    return view('etanom.pages.db-planted', compact('app_name'));
   }
 }
