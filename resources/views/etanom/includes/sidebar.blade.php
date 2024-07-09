@@ -17,26 +17,43 @@
 
   <!-- Scripts -->
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
 
+<body>
   <div class="h-full w-64 bg-[#234a1f] rounded-tr-3xl pt-12 px-4 fixed">
     <a href="{{ url('/etanom/home/orders') }}">
-      <button class="w-full bg-white text-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-        <span class="flex"><img src="{{ asset('img/Home.png') }}" alt="home" class="mr-6">Home</span>
+      <button class="w-full {{ Request::is('etanom/home*') ? 'bg-white text-[#234A1F]' : 'text-white bg-[#234A1F]' }} text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex">
+          <img src="{{ Request::is('etanom/home*') ? asset('img/Home-g.png') : asset('img/Home-w.png') }}" alt="home" class="mr-6">
+          Home
+        </span>
       </button>
     </a>
     <a href="{{ url('/etanom/messages') }}">
-      <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-        <span class="flex"><img src="{{ asset('img/Messages.png') }}" alt="messages" class="mr-6">Messages</span>
+      <button class="w-full {{ Request::is('etanom/messages*') ? 'bg-white text-[#234A1F]' : 'text-white bg-[#234A1F]' }} text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex">
+          <img src="{{ Request::is('etanom/messages*') ? asset('img/Messages-g.png') : asset('img/Messages-w.png') }}" alt="messages" class="mr-6">
+          Messages
+        </span>
       </button>
     </a>
     <a href="{{ url('/etanom/earnings') }}">
-      <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-        <span class="flex"><img src="{{ asset('img/Earnings.png') }}" alt="earnings" class="mr-6">Earnings</span>
+      <button class="w-full {{ Request::is('etanom/earnings*') ? 'bg-white text-[#234A1F]' : 'text-white bg-[#234A1F]' }} text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex">
+          <img src="{{ Request::is('etanom/earnings*') ? asset('img/Earnings-g.png') : asset('img/Earnings-w.png') }}" alt="earnings" class="mr-6">
+          Earnings
+        </span>
       </button>
     </a>
     <a href="{{ url('/etanom/profile') }}">
-      <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-        <span class="flex"><img src="{{ asset('img/Profile.png') }}" alt="profile" class="mr-6">Profile</span>
+      <button class="w-full {{ Request::is('etanom/profile*') ? 'bg-white text-[#234A1F]' : 'text-white bg-[#234A1F]' }} text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex">
+          <img src="{{ Request::is('etanom/profile*') ? asset('img/Profile-g.png') : asset('img/Profile-w.png') }}" alt="profile" class="mr-6">
+          Profile
+        </span>
       </button>
     </a>
   </div>
+</body>
+
+</html>
