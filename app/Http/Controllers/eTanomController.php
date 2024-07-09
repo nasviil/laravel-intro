@@ -66,4 +66,22 @@ class eTanomController extends Controller
 
     return view('etanom.pages.home-planted', compact('app_name'));
   }
+  public function messages()
+  {
+    $app_name = 'eTanom';
+
+    return view('etanom.pages.messages', compact('app_name'));
+  }
+  public function earnings()
+  {
+    $app_name = 'eTanom';
+
+    return view('etanom.pages.earnings', compact('app_name'));
+  }
+  public function profile()
+  {
+    $app_name = 'eTanom';
+
+    return view('etanom.pages.profile', compact('app_name'));
+  }
 }
