@@ -19,16 +19,24 @@
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
   <div class="h-full w-64 bg-[#234a1f] rounded-tr-3xl pt-12 px-4 fixed">
-    <button class="w-full bg-white text-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-      <span class="flex"><img src="{{ asset('img/Home.png') }}" alt="home" class="mr-6">Home</span>
-    </button>
-    <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-      <span class="flex"><img src="{{ asset('img/Messages.png') }}" alt="messages" class="mr-6">Messages</span>
-    </button>
-    <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-      <span class="flex"><img src="{{ asset('img/Earnings.png') }}" alt="earnings" class="mr-6">Earnings</span>
-    </button>
-    <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
-      <span class="flex"><img src="{{ asset('img/Profile.png') }}" alt="profile" class="mr-6">Profile</span>
-    </button>
+    <a href="{{ url('/etanom/home/orders') }}">
+      <button class="w-full bg-white text-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex"><img src="{{ asset('img/Home.png') }}" alt="home" class="mr-6">Home</span>
+      </button>
+    </a>
+    <a href="{{ url('/etanom/messages') }}">
+      <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex"><img src="{{ asset('img/Messages.png') }}" alt="messages" class="mr-6">Messages</span>
+      </button>
+    </a>
+    <a href="{{ url('/etanom/earnings') }}">
+      <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex"><img src="{{ asset('img/Earnings.png') }}" alt="earnings" class="mr-6">Earnings</span>
+      </button>
+    </a>
+    <a href="{{ url('/etanom/profile') }}">
+      <button class="w-full text-white bg-[#234A1F] text-left h-14 text-xl pl-6 rounded-lg mb-4">
+        <span class="flex"><img src="{{ asset('img/Profile.png') }}" alt="profile" class="mr-6">Profile</span>
+      </button>
+    </a>
   </div>
