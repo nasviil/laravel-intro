@@ -40,11 +40,11 @@ Route::group(['prefix' => 'imitate'], function () {
 Route::group(['prefix' => 'etanom'], function () {
     Route::get('/login', [eTanomController::class, 'login']);
     Route::get('/signup', [eTanomController::class, 'signup']);
-    Route::get('/login2', [eTanomController::class, 'email_login']);
+    Route::get('/login', [eTanomController::class, 'email_login']);
     Route::get('/signup2', [eTanomController::class, 'email_signup']);
-    Route::get('/dashboard/orders', [eTanomController::class, 'dashboard_orders']);
-    Route::get('/dashboard/planting', [eTanomController::class, 'dashboard_planting']);
-    Route::get('/dashboard/planted', [eTanomController::class, 'dashboard_planted']);
+    Route::get('/home/orders', [eTanomController::class, 'home_orders']);
+    Route::get('/home/planting', [eTanomController::class, 'home_planting']);
+    Route::get('/home/planted', [eTanomController::class, 'home_planted']);
     Route::get('/signup/details', [eTanomController::class, 'signup_details']);
     Route::get('/signup/details/id', [eTanomController::class, 'signup_id']);
 });
