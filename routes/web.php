@@ -40,13 +40,16 @@ Route::group(['prefix' => 'imitate'], function () {
 Route::group(['prefix' => 'etanom'], function () {
     Route::get('/login', [eTanomController::class, 'login']);
     Route::get('/signup', [eTanomController::class, 'signup']);
-    Route::get('/login', [eTanomController::class, 'email_login']);
+    Route::get('/login2', [eTanomController::class, 'email_login']);
     Route::get('/signup2', [eTanomController::class, 'email_signup']);
     Route::get('/home/orders', [eTanomController::class, 'home_orders']);
     Route::get('/home/planting', [eTanomController::class, 'home_planting']);
     Route::get('/home/planted', [eTanomController::class, 'home_planted']);
     Route::get('/signup/details', [eTanomController::class, 'signup_details']);
     Route::get('/signup/details/id', [eTanomController::class, 'signup_id']);
+    Route::get('/messages', [eTanomController::class, 'messages']);
+    Route::get('/earnings', [eTanomController::class, 'earnings']);
+    Route::get('/profile', [eTanomController::class, 'profile']);
 });
 
 require __DIR__ . '/auth.php';
