@@ -49,7 +49,7 @@
             <p class="font-poppins text-xl">Forgot Password?</p>
           </div>
         </div>
-        <a href="{{ url('etanom/dashboard/orders') }}">
+        <a href="{{ url('etanom/home/orders') }}">
           <button class="w-full bg-[#33B249] text-2xl font-montserrat h-14 font-semibold text-white rounded-lg mt-8 hover:bg-[#33b248c2]">Continue</button>
         </a>
         <div class="flex items-center mt-8">

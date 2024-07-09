@@ -30,7 +30,7 @@
           <p class="text-3xl font-bold">2</p>
         </div>
       </button>
-      <a href="{{ url('etanom/dashboard/planting') }}" class="w-[33%]">
+      <a href="{{ url('etanom/home/planting') }}" class="w-[33%]">
         <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
           <img src="{{ asset('img/Planting-inactive.png') }}" alt="orders" class="mr-4 fill-[#C8E3C5]">
           <div class="text-left">
@@ -39,7 +39,7 @@
           </div>
         </button>
       </a>
-      <a href="{{ url('etanom/dashboard/planted') }}" class="w-[33%]">
+      <a href="{{ url('etanom/home/planted') }}" class="w-[33%]">
         <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
           <img src="{{ asset('img/Planted-inactive.png') }}" alt="orders" class="mr-4 fill-[#C8E3C5]">
           <div class="text-left">

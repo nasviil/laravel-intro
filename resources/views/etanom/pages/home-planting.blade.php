@@ -23,7 +23,7 @@
   <section class="h-full flex-grow flex flex-col py-4 pr-14 pl-72 mr-[24%]">
     <div class="text-[#4DA444] text-4xl font-bold mb-4">Hello Roel. <span class="opacity-50 font-normal ml-2">Welcome Back!</span></div>
     <div class="flex justify-between gap-6">
-      <a href="{{ url('etanom/dashboard/orders') }}" class="w-[33%]">
+      <a href="{{ url('etanom/home/orders') }}" class="w-[33%]">
         <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
           <img src="{{ asset('img/Orders-inactive.png') }}" alt="orders" class="mr-4 fill-white">
           <div class="text-left">
@@ -32,7 +32,7 @@
           </div>
         </button>
       </a>
-      <a href="{{ url('etanom/dashboard/planting') }}" class="w-[33%]">
+      <a href="{{ url('etanom/home/planting') }}" class="w-[33%]">
         <button class="w-full h-28 border border-[#3E8336] bg-[#3E8336] text-white rounded-lg flex items-center px-6">
           <img src="{{ asset('img/Planting-active.png') }}" alt="orders" class="mr-4 fill-white">
           <div class="text-left">
@@ -41,7 +41,7 @@
           </div>
         </button>
       </a>
-      <a href="{{ url('etanom/dashboard/planted') }}" class="w-[33%]">
+      <a href="{{ url('etanom/home/planted') }}" class="w-[33%]">
         <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
           <img src="{{ asset('img/Planted-inactive.png') }}" alt="orders" class="mr-4 fill-white">
           <div class="text-left">
