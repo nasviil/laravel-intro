@@ -1,27 +1,54 @@
 @extends('etanom.layouts.dashboard')
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-
-  <title>{{ $app_name }}</title>
-
-  <!-- Fonts -->
-  <link rel="stylesheet" href="{{ asset('fontawesome-free-6.5.2-web\css\all.min.css') }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Scripts -->
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-  @section('content')
-  <section class="h-full flex-grow flex flex-col py-4 pr-14 pl-72 mr-[24%]">
-  </section>
-  @endsection
+@section('content')
+<section class="h-[calc(100vh-80px)] flex-grow flex flex-col py-8 pl-72 pr-8 mt-20">
+  <h1 class="text-3xl font-bold text-[#4DA444] pb-4 border-b">Messages</h1>
+  <div class="flex h-full gap-6">
+    <div class="h-full w-[45%] bg-white overflow-auto mt-4 rounded-xl pt-10 px-6" style="scrollbar-gutter: stable">
+      <div class="flex mb-8 items-center justify-between">
+        <div class="rounded-md bg-white border flex items-center px-2">
+          <input type="text" name="search" id="search" placeholder="Search chat" class="border-0 text-lg focus:outline-none focus:ring-0 w-64">
+          <img src="{{ asset('img/Search_Icon.png') }}" alt="" class="h-6 w-6">
+        </div>
+        <div class="flex gap-2">
+          <img src="{{ asset('img/new-message.png') }}" alt="" class="h-6 w-6">
+          <p class="">New Message</p>
+        </div>
+      </div>
+      <div class="flex justify-between p-4 items-start rounded-md hover:bg-neutral-200 cursor-pointer">
+        <div class="flex">
+          <img src="{{ asset('img/user1.png') }}" alt="" class="w-auto h-16">
+          <div class="ml-4">
+            <p class="font-semibold text-xl">Roel Bayola</p>
+            <p class="text-neutral-500 text-lg">bai</p>
+          </div>
+        </div>
+        <p class="text-neutral-500 text-xl">25:61</p>
+      </div>
+      <div class="flex justify-between p-4 items-start rounded-md hover:bg-neutral-200 cursor-pointer">
+        <div class="flex">
+          <img src="{{ asset('img/user2.png') }}" alt="" class="w-auto h-16">
+          <div class="ml-4">
+            <p class="font-semibold text-xl">Zeus Morley Pineda</p>
+            <p class="text-neutral-500 text-lg">bike ta c3</p>
+          </div>
+        </div>
+        <p class="text-neutral-500 text-xl">25:61</p>
+      </div>
+      <div class="flex justify-between p-4 items-start rounded-md hover:bg-neutral-200 cursor-pointer">
+        <div class="flex">
+          <img src="{{ asset('img/user3.png') }}" alt="" class="w-auto h-16">
+          <div class="ml-4">
+            <p class="font-semibold text-xl">James Ocao</p>
+            <p class="text-neutral-500 text-lg">I love kids</p>
+          </div>
+        </div>
+        <p class="text-neutral-500 text-xl">25:61</p>
+      </div>
+    </div>
+    <div class="h-full w-full bg-white overflow-auto mt-4 rounded-xl"></div>
+  </div>
+</section>
+@endsection
 
 </html>
