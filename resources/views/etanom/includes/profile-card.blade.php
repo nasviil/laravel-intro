@@ -18,7 +18,7 @@
   <!-- Scripts -->
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-  <section class="fixed right-0 h-full w-[25%] rounded-tl-3xl bg-white">
+  <section class="fixed right-0 h-full w-[25%] rounded-tl-3xl bg-white mt-24">
     <div class="pb-8 border-b border-neutral-200">
       <div class="flex pl-48 bg-gradient-to-t from-[#2E6229] via-[#183315] to-[#183939]  rounded-tl-3xl px-8 pt-16 relative">
         <img src="{{ asset('img/profile-pic.png') }}" alt="profile-picture" class="absolute left-6 -bottom-20">

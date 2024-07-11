@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <div class="h-full w-64 bg-[#234a1f] rounded-tr-3xl pt-12 px-4 fixed">
+  <div class="h-[calc(100vh-20px)] w-64 bg-[#234a1f] rounded-tr-3xl pt-12 px-4 mt-24 fixed">
     <a href="{{ url('/etanom/home/orders') }}">
       <button class="w-full {{ Request::is('etanom/home*') ? 'bg-white text-[#234A1F]' : 'text-white bg-[#234A1F]' }} text-left h-14 text-xl pl-6 rounded-lg mb-4">
         <span class="flex">
