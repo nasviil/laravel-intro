@@ -9,4 +9,40 @@
         color: black;
         padding: 8px;
     }
+
+    .accordion li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    input[type="radio"]:checked + label h1 {
+        background-image: linear-gradient(to right, #183939, #183315, #2e6229);
+        color: #fff;
+    }
+
+    input[type="radio"] + label + .content {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 1rem;
+        transition:
+            max-height 0.3s,
+            padding 0.3s;
+    }
+
+    input[type="radio"]:checked + label + .content {
+        max-height: 1000px; /* Adjust this value as needed */
+        padding: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    input[type="radio"] + label h1 {
+        transition:
+            background-image 0.3s,
+            color 0.3s;
+    }
 }
