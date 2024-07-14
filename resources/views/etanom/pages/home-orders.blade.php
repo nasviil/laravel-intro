@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="h-full flex-grow flex flex-col py-8 pr-14 pl-72 mr-[24%] mt-20">
-  <div class="text-[#4DA444] text-4xl font-bold mb-4">Hello Roel. <span class="opacity-50 font-normal ml-2">Welcome Back!</span></div>
+  <div class="text-[#4DA444] text-4xl font-semibold mb-4">Hello Roel. <span class="opacity-50 font-normal ml-2">Welcome Back!</span></div>
   <div class="flex justify-between gap-6">
     <button class="w-[33%] h-28 border border-[#3E8336] bg-[#3E8336] text-white rounded-lg flex items-center px-6">
       <img src="{{ asset('img/Orders-active.png') }}" alt="orders" class="mr-4 fill-white">
@@ -36,14 +36,14 @@
   </div>
   <div class="bg-white rounded-b-md">
     <div class="px-14 border-t-8 border-[#4DA444] p-2 flex justify-between">
-      <div class="font-bold text-xl">78GH3FBNJ<span class="font-normal border-l border-neutral-200 px-2 ml-2">Roel S. Bayola</span></div>
+      <div class="font-semibold text-xl">78GH3FBNJ<span class="font-normal border-l border-neutral-200 px-2 ml-2">Roel S. Bayola</span></div>
       <div class="text-[#4DA444] text-xl">TO ACCEPT</div>
     </div>
     <div class="px-14 border-t border-neutral-300 flex justify-between py-4">
       <div class="flex">
         <img src="{{ asset('img/Tree.png') }}" alt="" class="mr-2">
         <div>
-          <p class="text-2xl font-bold tracking-wide">White Laawan</p>
+          <p class="text-2xl font-semibold tracking-wide">White Laawan</p>
           <p class="text-neutral-500 text-xl">
             <i class="fa-solid fa-location-dot text-orange-500"></i>
             Naawan, Misamis Oriental
