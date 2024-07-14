@@ -96,4 +96,22 @@ class eTanomController extends Controller
 
     return view('etanom.pages.profile-id', compact('app_name'));
   }
+  public function editprofile_info()
+  {
+    $app_name = 'eTanom';
+
+    return view('etanom.pages.editprofile-info', compact('app_name'));
+  }
+  public function editprofile_manage()
+  {
+    $app_name = 'eTanom';
+
+    return view('etanom.pages.editprofile-manage', compact('app_name'));
+  }
+  public function editprofile_billing()
+  {
+    $app_name = 'eTanom';
+
+    return view('etanom.pages.editprofile-billing', compact('app_name'));
+  }
 }
