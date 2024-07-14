@@ -33,10 +33,12 @@
             <img src="{{ asset('img/View.png') }}" alt="" class="h-5 w-7">
           </button>
         </a>
-        <button class="bg-[#234A1F] flex text-white items-center px-2 rounded-lg text-xl gap-3">
-          <img src="{{ asset('img/Edit.png') }}" alt="" class="h-7 w-7">
-          Edit Profile
-        </button>
+        <a href="{{ url('/etanom/profile/edit/info') }}" class="">
+          <button class="bg-[#234A1F] flex text-white items-center px-2 h-12 rounded-lg text-xl gap-3">
+            <img src="{{ asset('img/Edit.png') }}" alt="" class="h-7 w-7">
+            Edit Profile
+          </button>
+        </a>
       </div>
       <div>
         <div class="flex justify-between items-center px-4 mt-4">
