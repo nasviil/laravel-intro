@@ -28,9 +28,11 @@
         </div>
       </div>
       <div class="flex justify-end w-full px-8 py-4">
-        <button class="bg-[#234A1F] px-3 py-4 rounded-lg mr-6">
-          <img src="{{ asset('img/View.png') }}" alt="" class="h-5 w-7">
-        </button>
+        <a href="{{ url('/etanom/profile/info') }}">
+          <button class="bg-[#234A1F] px-3 py-4 rounded-lg mr-6">
+            <img src="{{ asset('img/View.png') }}" alt="" class="h-5 w-7">
+          </button>
+        </a>
         <button class="bg-[#234A1F] flex text-white items-center px-2 rounded-lg text-xl gap-3">
           <img src="{{ asset('img/Edit.png') }}" alt="" class="h-7 w-7">
           Edit Profile
