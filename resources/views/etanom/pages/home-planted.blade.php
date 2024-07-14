@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="h-full flex-grow flex flex-col py-8 pr-14 pl-72 mr-[24%] mt-20">
-  <div class="text-[#4DA444] text-4xl font-bold mb-4">Hello Roel. <span class="opacity-50 font-normal ml-2">Welcome Back!</span></div>
+  <div class="text-[#4DA444] text-4xl font-semibold mb-4">Hello Roel. <span class="opacity-50 font-normal ml-2">Welcome Back!</span></div>
   <div class="flex justify-between gap-6">
     <a href="{{ url('etanom/home/orders') }}" class="w-[33%]">
       <button class="w-full bg-white h-28 border border-[#C8E3C5] text-[#C8E3C5] rounded-lg flex items-center px-6">
@@ -38,14 +38,14 @@
   </div>
   <div class="bg-white rounded-b-md">
     <div class="px-14 border-t-8 border-[#4DA444] p-2 flex justify-between">
-      <div class="font-bold text-xl">83JDLW029<span class="font-normal border-l border-neutral-200 px-2 ml-2">Roel S. Bayola</span></div>
+      <div class="font-semibold text-xl">83JDLW029<span class="font-normal border-l border-neutral-200 px-2 ml-2">Roel S. Bayola</span></div>
       <div class="text-[#4DA444] text-xl">COMPLETED <span class="font-bold border-l border-neutral-200 px-2">JUNE 32, 2029</span></div>
     </div>
     <div class="px-14 border-t border-neutral-300 flex justify-between py-4">
       <div class="flex">
         <img src="{{ asset('img/Rectangle_220.png') }}" alt="" class="mr-2">
         <div>
-          <p class="text-2xl font-bold tracking-wide">Bear Brand</p>
+          <p class="text-2xl font-semibold tracking-wide">Bear Brand</p>
           <p class="text-neutral-500 text-xl">
             <i class="fa-solid fa-location-dot text-orange-500"></i>
             Naawan, Misamis Oriental
