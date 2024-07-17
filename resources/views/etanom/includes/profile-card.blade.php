@@ -23,7 +23,7 @@
       <div class="flex pl-48 bg-gradient-to-t from-[#2E6229] via-[#183315] to-[#183939]  rounded-tl-3xl px-8 pt-16 relative">
         <img src="{{ asset('img/profile-pic.png') }}" alt="profile-picture" class="absolute left-6 -bottom-20">
         <div class="flex flex-col mb-4">
-          <h1 class="text-white text-3xl font-bold">Roel S. Bayola</h1>
+          <h1 class="text-white text-3xl font-semibold">Roel S. Bayola</h1>
           <h2 class="text-neutral-300 text-xl">Planter ID: 0042069</h2>
         </div>
       </div>
@@ -46,35 +46,35 @@
             <img src="{{ asset('img/email-profile.png') }}" alt="" class="h-6 w-8 mr-2">
             <h2 class="text-xl">Email Address</h2>
           </div>
-          <h1 class="font-bold text-xl">roel@bayola.com</h1>
+          <h1 class="font-semibold text-xl">roel@bayola.com</h1>
         </div>
         <div class="flex justify-between items-center px-4 mt-4">
           <div class="flex items-center">
             <img src="{{ asset('img/phone-profile.png') }}" alt="" class="h-8 w-8 mr-2">
             <h2 class="text-xl">Phone Number</h2>
           </div>
-          <h1 class="font-bold text-xl">0956723777</h1>
+          <h1 class="font-semibold text-xl">0956723777</h1>
         </div>
       </div>
     </div>
     <div class="border-b border-neutral-200 px-4 py-8">
       <div class="flex w-full bg-[#EDF6EC] rounded-xl p-4 items-center justify-between">
         <div class="h-full flex flex-col items-center justify-center p-2 border-r border-neutral-200">
-          <h1 class="text-4xl text-[#3E8336] font-bold">643</h1>
+          <h1 class="text-4xl text-[#3E8336] font-semibold">643</h1>
           <h2 class="text-lg text-[#1B3918]">Trees Planted</h2>
         </div>
         <div class="h-full flex flex-col items-center justify-center p-2 border-r border-neutral-200">
-          <h1 class="text-4xl text-[#3E8336] font-bold">38</h1>
+          <h1 class="text-4xl text-[#3E8336] font-semibold">38</h1>
           <h2 class="text-lg text-[#1B3918]">Trees Planting</h2>
         </div>
         <div class="h-full flex flex-col items-center justify-center p-2">
-          <h1 class="text-4xl text-[#3E8336] font-bold">219</h1>
+          <h1 class="text-4xl text-[#3E8336] font-semibold">219</h1>
           <h2 class="text-lg text-[#1B3918]">Trees Growing</h2>
         </div>
       </div>
     </div>
     <div class="p-8">
-      <h1 class="text-2xl text-[#234A1F] font-bold mb-8">My Earnings</h1>
+      <h1 class="text-2xl text-[#234A1F] font-semibold mb-8">My Earnings</h1>
       <div class="flex justify-between mb-4">
         <div class="flex">
           <img src="{{ asset('img/earnings-profile-card.png') }}" alt="" class="w-7 h-6 mr-4">
