@@ -45,4 +45,57 @@
             background-image 0.3s,
             color 0.3s;
     }
+
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 12px;
+    }
+
+    .tabs__radio {
+        display: none;
+    }
+
+    .tabs__content {
+        order: 1;
+        width: 100%;
+        display: none;
+    }
+
+    .tabs__label {
+        cursor: pointer;
+    }
+
+    .tabs__radio:checked + .tabs__label {
+        background-color: #4da444;
+        color: white;
+    }
+
+    .tabs__radio:checked + .tabs__label + .tabs__content {
+        display: block;
+    }
+
+    .content__table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0.5rem;
+        font-size: larger;
+    }
+
+    .content__table thead tr {
+        background-color: white;
+        color: #4da444;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .content__table th,
+    .content__table td {
+        padding: 1rem 0.5rem;
+    }
+
+    .content__table tbody tr:nth-of-type(odd) {
+        background-color: #edf6ec;
+    }
 }
