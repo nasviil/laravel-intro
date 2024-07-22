@@ -1,7 +1,7 @@
 @extends('etanom.layouts.dashboard')
 @section('content')
-<section class="h-[calc(100vh-80px)] flex-grow flex flex-col py-8 pl-72 pr-8 mt-20 overflow-auto">
-  <h1 class="text-3xl font-semibold text-[#4DA444] pb-4 border-b mb-4">Profile</h1>
+<section class="h-[calc(100vh-80px)] flex-grow flex flex-col py-8 pl-72 pr-8 mt-20">
+  <h1 class="text-3xl font-semibold text-normal pb-4 border-b mb-4">Profile</h1>
   <div class="h-full bg-white rounded-3xl w-full">
     <div class=" flex items-end px-48 py-4 bg-gradient-to-t from-[#2E6229] via-[#183315] to-[#183939] rounded-t-3xl h-44 relative w-full mb-6">
       <img src="{{ asset('img/profile-pic.png') }}" alt="" class="w-auto h-44 absolute -bottom-24">
@@ -13,9 +13,8 @@
       </div>
       <div class="self-end ml-auto flex gap-6">
         <a href="{{ url('/etanom/profile/edit/info') }}">
-          <button class="bg-white text-darker px-4 py-2 text-xl rounded-xl font-semibold"><i class="fa-regular fa-pen-to-square mr-2"></i>Edit Profile</button>
+          <button class="bg-white text-darker px-4 py-2 text-xl rounded-xl font-semibold"><i class="fa-solid fa-gear mr-2"></i>Settings</button>
         </a>
-        <button class="bg-white text-darker px-4 py-2 text-xl rounded-xl font-semibold"><i class="fa-solid fa-gear mr-2"></i>Settings</button>
       </div>
     </div>
     <div class="flex h-24 items-center mb-10 ml-auto">

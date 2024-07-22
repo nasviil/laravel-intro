@@ -7,7 +7,7 @@
     <div class="tabs__content">
       <div class="flex items-center text-lg gap-4">
         <p>Show</p>
-        <select class="rounded-md w-16 border-0 bg-light">
+        <select class="rounded-md w-20 border-0 bg-light">
           <?php
           for ($i = 1; $i <= 100; $i++) {
             $selected = ($i == 5) ? 'selected' : '';

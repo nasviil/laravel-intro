@@ -25,6 +25,23 @@
     @include('etanom.includes.sidebar')
     @yield('content')
   </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const inputs = document.querySelectorAll('.styled-input');
+
+      inputs.forEach(input => {
+        input.addEventListener('input', () => {
+          if (input.value) {
+            input.classList.add('has-value');
+          } else {
+            input.classList.remove('has-value');
+          }
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 @extends('etanom.layouts.dashboard')
 @section('content')
 <section class="h-auto flex-grow flex flex-col py-8 pl-72 pr-8 mt-20 overflow-auto">
-  <h1 class="text-3xl font-semibold text-[#4DA444] pb-4 border-b mb-4">Settings</h1>
+  <h1 class="text-3xl font-semibold text-normal pb-4 border-b mb-4">Settings</h1>
   <div class="flex">
     @include('etanom.includes.editprofile-sidebar')
     <section class="w-full">
@@ -22,7 +22,7 @@
               <button class="text-center w-full rounded-full bg-neutral-300 text-neutral-500 py-4 text-lg">
                 Discard
               </button>
-              <button class="text-center w-full rounded-full bg-[#33B249] text-white py-4 text-lg">
+              <button class="text-center w-full rounded-full bg-accept hover:bg-accept_hover text-white py-4 text-lg">
                 Save Changes
               </button>
             </div>

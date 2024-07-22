@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="h-[calc(100vh-80px)] flex-grow flex flex-col py-8 pl-72 pr-8 mt-20">
-  <h1 class="text-3xl font-semibold text-[#4DA444] pb-4 border-b">Messages</h1>
+  <h1 class="text-3xl font-semibold text-normal pb-4 border-b">Messages</h1>
   <div class="flex h-full gap-6">
     <section class="h-full w-[45%] bg-white overflow-auto mt-4 rounded-xl pt-10 px-6" style="scrollbar-gutter: stable">
       <div class="flex mb-8 items-center justify-between">
