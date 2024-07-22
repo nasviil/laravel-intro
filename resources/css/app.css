@@ -3,11 +3,29 @@
 @tailwind utilities;
 
 @layer components {
+    body {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
     .text-input {
         background-color: white;
         border-radius: 8px;
+        border: 2px solid rgba(0, 0, 0, 0.253);
         color: black;
         padding: 8px;
+        outline: none;
+        height: 4rem;
+    }
+
+    .text-input:focus {
+        border: 2px solid #234a1f;
+        box-shadow: 0 0 4px 4px #c8e3c5;
+    }
+
+    .has-value {
+        border: 2px solid #234a1f;
+        box-shadow: 0 0 4px 4px #c8e3c5;
     }
 
     .accordion li {
@@ -79,7 +97,6 @@
     .content__table {
         border-collapse: collapse;
         width: 100%;
-        margin: 0.5rem;
         font-size: larger;
     }
 
@@ -98,4 +115,52 @@
     .content__table tbody tr:nth-of-type(odd) {
         background-color: #edf6ec;
     }
+
+    .inv__content__table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: larger;
+    }
+
+    .inv__content__table thead tr {
+        background-color: white;
+        color: #4da444;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .inv__content__table tbody tr {
+        font-weight: 500;
+    }
+
+    .inv__content__table th,
+    .inv__content__table td {
+        padding: 1rem 2rem;
+    }
+
+    .inv__content__table tbody tr:nth-of-type(odd) {
+        background-color: #edf6ec;
+    }
+
+    .otp__input input {
+        width: 64px;
+        font-size: 28px;
+        padding: 18px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 8px;
+        border: 4px solid #edf6ec;
+        background-color: white;
+        font-weight: 500;
+        color: black;
+        outline: none;
+        transition: all 0.1s;
+    }
+
+    .otp__input input:focus {
+        border: 4px solid #234a1f;
+        box-shadow: 0 0 4px 4px #c8e3c5;
+    }
+
+    /* U+25B4 (Black up-pointing small triangle ▴) U+25BE (Black down-pointing small triangle ▾) */
 }
