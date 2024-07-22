@@ -55,6 +55,7 @@ Route::group(['prefix' => 'etanom'], function () {
     Route::get('/profile/edit/info', [eTanomController::class, 'editprofile_info']);
     Route::get('/profile/edit/manage', [eTanomController::class, 'editprofile_manage']);
     Route::get('/profile/edit/billing', [eTanomController::class, 'editprofile_billing']);
+    Route::get('/inventory', [eTanomController::class, 'inventory']);
 });
 
 require __DIR__ . '/auth.php';

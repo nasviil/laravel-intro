@@ -114,4 +114,10 @@ class eTanomController extends Controller
 
     return view('etanom.pages.editprofile-billing', compact('app_name'));
   }
+  public function inventory()
+  {
+    $app_name = 'eTanom';
+
+    return view('etanom.pages.inventory', compact('app_name'));
+  }
 }
