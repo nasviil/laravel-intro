@@ -26,6 +26,8 @@ export default {
                 dark_hover: "#2e6229",
                 dark_active: "#234a1f",
                 darker: "#1b3918",
+                accept: "#33B249",
+                accept_hover: "#2ea042",
             },
         },
         fontWeight: {
